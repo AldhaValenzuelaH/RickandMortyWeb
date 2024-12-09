@@ -1,0 +1,15 @@
+img{
+  padding: 10px;
+}
+
+mat-toolbar{
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+mat-icon, span{
+  color: #FFFFFF;
+}
