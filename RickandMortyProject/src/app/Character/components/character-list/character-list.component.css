@@ -1,0 +1,18 @@
+.character-card{
+  margin: 16px;
+
+}
+
+.mat-card {
+  width: 100%;
+  text-align: center;
+}
+
+.mat-card-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.mat-card-title, .mat-card-subtitle {
+  text-align: center;
+}
