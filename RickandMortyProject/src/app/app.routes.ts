@@ -1,9 +1,7 @@
 import { Routes } from '@angular/router';
-import {PruebitaComponent} from './Character/components/pruebita/pruebita.component';
-import {CharacterListComponent} from './Character/components/character-list/character-list.component';
+import {FinalListComponent} from './Character/components/final-list/final-list.component';
 
 export const routes: Routes = [
-  {path: 'pruebita', component: PruebitaComponent},
-  {path:'listita', component: CharacterListComponent},
+  {path:'listita', component: FinalListComponent},
   {path: '', redirectTo: 'listita', pathMatch: 'full'},
 ];

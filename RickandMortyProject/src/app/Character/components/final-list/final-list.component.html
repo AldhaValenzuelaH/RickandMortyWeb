@@ -1,1 +1,5 @@
-<p>final-list works!</p>
+<div fxLayout="row wrap" fxLayoutGap="16px" fxLayoutAlign="start start">
+    <div *ngFor="let character of characters" fxFlex="calc(50% - 16px)" fxFlex.lt-md="100%">
+      <app-character-list [character]="character"></app-character-list>
+    </div>
+</div>

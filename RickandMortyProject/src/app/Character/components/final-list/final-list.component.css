@@ -1,0 +1,6 @@
+
+div[fxFlex] {
+  display: flex;
+  justify-content: center;
+}
+

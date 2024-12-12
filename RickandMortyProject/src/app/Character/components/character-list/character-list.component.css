@@ -1,16 +1,39 @@
-.character-card{
+.character-card {
   margin: 16px;
-
+  width: 300px;
 }
 
 .mat-card {
-  width: 100%;
+  width: 100%; /* O un porcentaje o valor fijo como 300px */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  justify-content: space-between;
+}
+
+.mat-card-content {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all; /* Asegura que las palabras se rompan correctamente si son demasiado largas */
+  max-height: 150px; /* Define un alto máximo si deseas limitar el tamaño */
+  overflow: auto;
+  flex-grow: 1;
+}
+
+.example-header-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ocultar cualquier contenido fuera del contenedor */
+  border-radius: 10px; /* Redondeo del contorno */
 }
 
 .mat-card-image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+  border-radius: inherit; /* Asegura que el borde redondeado de la imagen herede el del contenedor */
 }
 
 .mat-card-title, .mat-card-subtitle {
