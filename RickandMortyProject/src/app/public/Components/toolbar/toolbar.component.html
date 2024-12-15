@@ -1,6 +1,4 @@
 
-
-
 <mat-toolbar>
   <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Rick_and_Morty.svg" alt="rickandmorty-logo" width="10%" >
 
@@ -17,4 +15,10 @@
   <button mat-button class="example-icon" aria-label="Example icon-button with share icon">
     <span>Episodes</span>
   </button>
+  <mat-slide-toggle
+    class="example-icon"
+    (change)="toggleLanguage($event)"
+    aria-label="Switch language between English and Spanish">
+    {{ currentLanguage === 'en' ? 'English' : 'Español' }}
+  </mat-slide-toggle>
 </mat-toolbar>
